@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Título que aparece na aba do navegador -->
+  <title>Linux Legends</title>
+
+  <!-- Esse é o ícone da aba (Favicon). É um emoji de computador. 
+       Se quiser trocar, mude o desenho dentro da tag <text> abaixo -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🖥️</text></svg>">
+
+  <!-- Bloco de Fontes do Google: Inter para o texto e JetBrains para o logo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Ícones oficiais do Google para usar no menu -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
+
+  <!-- Essa biblioteca (Marked.js) é a mágica que transforma seus textos .md em site -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+  <!-- Onde mora toda a beleza visual do site -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- Barra de navegação do topo -->
+  <nav class="top-nav">
+    <div class="container nav-container">
+
+      <!-- Logo que imita um terminal. 
+           p-user = Usuário, p-at = @, p-host = Máquina -->
+      <a href="#inicio" class="logo-terminal">
+        <span class="p-user">Linux</span><span class="p-at">@</span><span class="p-host">Legends</span><span class="p-dir">~</span><span class="p-sep">:</span><span class="p-sign">$</span>
+      </a>
+
+      <!-- Links do Menu. Se quiser adicionar mais uma página, 
+           basta copiar uma linha <li> e mudar o link -->
+      <ul class="nav-links">
+        <li><a href="#inicio"><span class="nav-emoji">🏠</span>Inicio</a></li>
+        <li><a href="#arquivos"><span class="nav-emoji">📂</span>Arquivos</a></li>
+        <li><a href="#contato"><span class="nav-emoji">✉️</span>Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Esse espaço vazio evita que o conteúdo fique "escondido" atrás do menu fixo -->
+  <div class="nav-spacer"></div>
+
+  <!-- Aqui é o "palco". Todo o texto dos seus arquivos .md será injetado aqui dentro -->
+  <main class="container" id="content-area">
+    <p style="text-align: center; margin-top: 50px; opacity: 0.5;">Conectando ao sistema Linux Legends...</p>
+  </main>
+
+  <!-- Toda a inteligência de trocar de página sem recarregar o site está aqui -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
